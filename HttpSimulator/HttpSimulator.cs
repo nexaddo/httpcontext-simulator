@@ -157,30 +157,7 @@ namespace Http.TestLibrary
             InitializeSession();
 
             InitializeApplication();
-
-            #region Console Debug INfo
-
-            Console.WriteLine("host: " + host);
-            Console.WriteLine("virtualDir: " + applicationPath);
-            Console.WriteLine("page: " + localPath);
-            Console.WriteLine("pathPartAfterApplicationPart: " + _page);
-            Console.WriteLine("appPhysicalDir: " + physicalApplicationPath);
-            Console.WriteLine("Request.Url.LocalPath: " + System.Web.HttpContext.Current.Request.Url.LocalPath);
-            Console.WriteLine("Request.Url.Host: " + System.Web.HttpContext.Current.Request.Url.Host);
-            Console.WriteLine("Request.FilePath: " + System.Web.HttpContext.Current.Request.FilePath);
-            Console.WriteLine("Request.Path: " + System.Web.HttpContext.Current.Request.Path);
-            Console.WriteLine("Request.RawUrl: " + System.Web.HttpContext.Current.Request.RawUrl);
-            Console.WriteLine("Request.Url: " + System.Web.HttpContext.Current.Request.Url);
-            Console.WriteLine("Request.Url.Port: " + System.Web.HttpContext.Current.Request.Url.Port);
-            Console.WriteLine("Request.ApplicationPath: " + System.Web.HttpContext.Current.Request.ApplicationPath);
-            Console.WriteLine("Request.PhysicalPath: " + System.Web.HttpContext.Current.Request.PhysicalPath);
-            Console.WriteLine("HttpRuntime.AppDomainAppPath: " + HttpRuntime.AppDomainAppPath);
-            Console.WriteLine("HttpRuntime.AppDomainAppVirtualPath: " + HttpRuntime.AppDomainAppVirtualPath);
-            Console.WriteLine("HostingEnvironment.ApplicationPhysicalPath: " + HostingEnvironment.ApplicationPhysicalPath);
-            Console.WriteLine("HostingEnvironment.ApplicationVirtualPath: " + HostingEnvironment.ApplicationVirtualPath);
-
-            #endregion Console Debug INfo
-
+            
             return this;
         }
 
